@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_evaluate/pages/customerPage.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_js/flutter_js.dart';
 
@@ -72,9 +73,10 @@ class _HomePageState extends State<Homepage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          a = 20;
-          b = 30;
-          evaluateJsFromApi();
+          // a = 20;
+          // b = 30;
+          // evaluateJsFromApi();
+          Navigator.push(context, MaterialPageRoute(builder: (context) => Customerpage()));
         },
         child: const Icon(Icons.play_arrow),
       ),
